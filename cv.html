@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stacy Tech | CV</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --text: #11233b;
+        --muted: #5f6f7f;
+        --primary: #0f5cda;
+        --border: #e2e8f0;
+        --bg: #f8fafc;
+        --card: #ffffff;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Inter", sans-serif;
+        color: var(--text);
+        background: var(--bg);
+        line-height: 1.6;
+      }
+
+      .cv-page {
+        max-width: 900px;
+        margin: 2rem auto;
+        padding: 2rem;
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 24px;
+        box-shadow: 0 20px 60px rgba(8, 24, 48, 0.08);
+      }
+
+      .cv-toolbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1.5rem;
+        gap: 1rem;
+      }
+
+      .cv-toolbar a,
+      .cv-toolbar button {
+        border: none;
+        background: var(--primary);
+        color: white;
+        padding: 0.7rem 1rem;
+        border-radius: 999px;
+        cursor: pointer;
+        text-decoration: none;
+        font-weight: 600;
+      }
+
+      .cv-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        gap: 1.5rem;
+        padding-bottom: 1.5rem;
+        border-bottom: 1px solid var(--border);
+      }
+
+      .eyebrow {
+        color: var(--primary);
+        font-size: 0.82rem;
+        font-weight: 700;
+        letter-spacing: 0.24em;
+        text-transform: uppercase;
+        margin: 0 0 0.4rem;
+      }
+
+      h1, h2, h3 {
+        font-family: "Manrope", sans-serif;
+        margin: 0;
+      }
+
+      h1 {
+        font-size: 2rem;
+        margin-bottom: 0.3rem;
+      }
+
+      h2 {
+        font-size: 1rem;
+        color: var(--muted);
+        font-weight: 600;
+      }
+
+      .cv-contact {
+        display: grid;
+        gap: 0.35rem;
+      }
+
+      .cv-contact a {
+        color: var(--text);
+        text-decoration: none;
+      }
+
+      .cv-section {
+        padding-top: 1.4rem;
+      }
+
+      .cv-section h3 {
+        font-size: 1.1rem;
+        margin-bottom: 0.7rem;
+      }
+
+      .cv-grid {
+        display: grid;
+        grid-template-columns: 1.2fr 0.8fr;
+        gap: 1rem;
+        margin-top: 1rem;
+      }
+
+      .cv-card {
+        padding: 1rem;
+        background: #f8fbff;
+        border: 1px solid var(--border);
+        border-radius: 16px;
+      }
+
+      .item {
+        margin-bottom: 1rem;
+      }
+
+      .item-header {
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+        margin-bottom: 0.2rem;
+      }
+
+      .item-header span {
+        color: var(--primary);
+        font-weight: 600;
+      }
+
+      ul {
+        padding-left: 1.1rem;
+        margin: 0;
+      }
+
+      li {
+        margin-bottom: 0.35rem;
+      }
+
+      @media print {
+        body {
+          background: white;
+        }
+
+        .cv-page {
+          box-shadow: none;
+          border: none;
+          margin: 0;
+          padding: 0;
+          max-width: none;
+        }
+
+        .cv-toolbar {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="cv-page">
+      <div class="cv-toolbar">
+        <button onclick="window.print()">Print / Save as PDF</button>
+        <a href="../index.html">Back to portfolio</a>
+      </div>
+
+      <section class="cv-header">
+        <div>
+          <p class="eyebrow">Virtual Assistant • Frontend Developer</p>
+          <h1>Stacy Tech</h1>
+          <h2>Reliable support, polished design, and strong digital execution</h2>
+        </div>
+
+        <div class="cv-contact">
+          <a href="mailto:successomede06@gmail.com">successomede06@gmail.com</a>
+          <a href="https://github.com/stacytech">github.com/stacytech</a>
+          <a href="https://www.tiktok.com/@stacytech">tiktok.com/@stacytech</a>
+        </div>
+      </section>
+
+      <section class="cv-section">
+        <h3>Professional Summary</h3>
+        <p>
+          I am a Virtual Assistant and Frontend Developer with a strong focus on organization,
+          communication, and creating polished digital experiences. I combine practical support
+          skills with modern web development to help clients and businesses operate more smoothly
+          and present themselves professionally online.
+        </p>
+      </section>
+
+      <div class="cv-grid">
+        <div class="cv-card">
+          <h3>Experience</h3>
+
+          <div class="item">
+            <div class="item-header">
+              <strong>Virtual Assistant & Frontend Developer</strong>
+              <span>2025 - Present</span>
+            </div>
+            <p>
+              Providing client support, administrative coordination, and frontend development
+              services while building modern, responsive websites and user-focused digital solutions.
+            </p>
+          </div>
+        </div>
+
+        <div class="cv-card">
+          <h3>Core Skills</h3>
+          <ul>
+            <li>Frontend development with HTML, CSS, and JavaScript</li>
+            <li>Responsive website design</li>
+            <li>Client communication and support</li>
+            <li>Administrative organization and task coordination</li>
+            <li>Attention to detail and professional presentation</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="cv-grid">
+        <div class="cv-card">
+          <h3>Selected Projects</h3>
+          <ul>
+            <li>Landing page project with modern responsive design</li>
+            <li>Hotel website with clean UI and strong visual storytelling</li>
+            <li>eCommerce website with improved navigation and user experience</li>
+          </ul>
+        </div>
+
+        <div class="cv-card">
+          <h3>Tools & Strengths</h3>
+          <ul>
+            <li>GitHub and version control</li>
+            <li>Clear communication</li>
+            <li>Reliable follow-through</li>
+            <li>Professional, polished presentation</li>
+          </ul>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

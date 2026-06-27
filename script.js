@@ -1,28 +1,25 @@
-function toggleMenu() {
-    const menu = document.querySelector (".menu-links");
-    const icon = document.querySelector(".hamburger-icon");
-    menu.classList.remove('instant-close'); 
-    menu.classList.toggle("open");
-    icon.classList.toggle("open");
+const menuButton = document.querySelector(".hamburger-icon");
+const menu = document.querySelector(".menu-links");
+
+if (menuButton && menu) {
+  menuButton.addEventListener("click", () => {
+    const isOpen = menu.classList.toggle("open");
+    menuButton.classList.toggle("open", isOpen);
+    menuButton.setAttribute("aria-expanded", String(isOpen));
+    document.body.classList.toggle("menu-open", isOpen);
+  });
+
+  document.querySelectorAll(".menu-links a").forEach((link) => {
+    link.addEventListener("click", () => {
+      menu.classList.remove("open");
+      menuButton.classList.remove("open");
+      menuButton.setAttribute("aria-expanded", "false");
+      document.body.classList.remove("menu-open");
+    });
+  });
 }
 
-document.querySelectorAll('#hamburger-nav .menu-links a').forEach(link => {
-    link.addEventListener('click', () => {
-        const menu = document.querySelector(".menu-links");
-        const icon = document.querySelector(".hamburger-icon");
-        
-        if (menu.classList.contains('open')) {
-         
-             menu.classList.add('instant-close');
-        }
-
-      
-        setTimeout(() => {
-            if (menu.classList.contains('open')) {
-                 menu.classList.remove("open");
-                 icon.classList.remove("open");
-                 menu.classList.remove('instant-close');
-            }
-        }, 0); 
-    });
-});
+const year = document.getElementById("year");
+if (year) {
+  year.textContent = new Date().getFullYear();
+}

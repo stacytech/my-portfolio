@@ -1,9 +1,33 @@
-@media (max-width: 850px) {
-  #desktop-nav {
-    display: none;
+@media (max-width: 1024px) {
+  .hero-grid {
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding-top: 3rem;
   }
 
-  .nav-links {
-    display: flex;
+  .hero__title {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    padding: 0.9rem 0;
+  }
+
+  .section {
+    padding: 4rem 0;
+  }
+
+  .hero__badges {
+    gap: 0.55rem;
+  }
+
+  .hero__badges span {
+    font-size: 0.85rem;
   }
 }
